@@ -1,1 +1,9 @@
-<h1> My name is Jason Andrew Charles and my favorite hobby is Joy Riding in a 2.7t Swapped B6 S4. The current time is:<p>Current Date and Time is <span id='date-time'></span>.</p> <h1>
+<h1> My name is Jason Andrew Charles and my favorite hobby is Joy Riding in a 2.7t Swapped B6 S4. The current time is: <script type="text/javascript">
+    var clockElement = document.getElementById('clock');
+
+    function clock() {
+        clockElement.textContent = new Date().toString();
+    }
+
+    setInterval(clock, 1000);
+</script><h1>
